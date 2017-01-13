@@ -1,0 +1,10 @@
+---
+slug: :steinyaki
+depends:
+  mikutter: 3.5.0
+  plugin:
+  - streaming
+version: '0.0.1'
+author: ahiru
+name: steinyaki
+description: ｳﾞｪﾝﾃﾞﾙｼｭﾀｲﾝ焼き
