@@ -42,10 +42,6 @@ Plugin.create(:steinyaki) do
       # メッセージ生成時刻が起動前またはリツイートならば次のループへ
       next if m[:created] < @defined_time or m.retweet?
 
-      p m.user
-      p m.user[:id]
-      p @user_list
-
       if m.to_s =~ Regexp.union(stein) and @user_list.include?(m.user[:id].to_s)
         # select reply dic & send reply & fav
         reply = select_reply(m.to_s, Time.now)
